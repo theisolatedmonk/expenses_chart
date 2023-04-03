@@ -6,7 +6,7 @@
 }
 
 .graph {
-    @apply flex justify-between items-center flex-col h-44 w-14;
+    @apply flex items-center flex-col h-44 w-14 justify-end;
 }
 
 .graphcolrd {
