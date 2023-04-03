@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.value {
+    @apply bg-stone-800 rounded-sm h-8 w-full text-white text-center hidden;
+}
+
+.graph {
+    @apply flex justify-between items-center flex-col h-44 w-14;
+}
+
+.graphcolrd {
+    @apply w-10 bg-orange-500 h-full rounded-sm
+}
