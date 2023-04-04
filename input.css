@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 .value {
-    @apply bg-stone-800 items-center justify-center rounded-sm h-8 w-full text-white hidden;
+    @apply bg-stone-800 items-center justify-center rounded-sm h-6 w-full text-white hidden;
 }
 
 .graph {

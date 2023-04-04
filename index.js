@@ -22,6 +22,9 @@ const sundayAmt = document.getElementById('sun_amt');
 const days = [mondayDiv, tuedayDiv, wednesdayDiv, thursdayDiv, fridayDiv, saturdayDiv, sundayDiv]
 const daysAmt = [mondayAmt, tuesdayAmt, wednesdayAmt, thursdayAmt, fridayAmt, saturdayAmt, sundayAmt]
 
+const d = new Date();
+let weekday = d.getDay()
+
 fetch('\data.json')
     .then(response => response.json())
     .then(data => {
@@ -36,12 +39,14 @@ fetch('\data.json')
 
 
         for (let i = 0; i < days.length; i++) {
-            days[i].style.height = `${data[i].amount}px`
+            days[i].style.height = `${data[i].amount}%`
+            days[weekday - 1].style.backgroundColor = "skyblue"
         }
 
         for (let i = 0; i < daysAmt.length; i++) {
             daysAmt[i].innerHTML = `${data[i].amount}`
         }
+        // console.log(data[0].amount);
 
         // console.log(mondayDiv.)
 
