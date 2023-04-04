@@ -1,0 +1,6 @@
+{
+    "testing.saveBeforeTest": false,
+    "task.saveBeforeRun": "always",
+    "javascript.format.enable": false,
+    "css.format.enable": false
+}
